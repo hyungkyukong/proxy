@@ -19,6 +19,6 @@ public class AppV1Config {
 
     @Bean
     public OrderRepositoryV1 orderRepositoryV1() {
-        return new OrderRepositoryV1V1Impl();
+        return new OrderRepositoryV1Impl();
     }
 }

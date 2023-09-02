@@ -24,7 +24,7 @@ public class InterfaceProxyConfig {
 
     @Bean
     public OrderRepositoryV1 orderRepository(LogTrace logTrace) {
-        OrderRepositoryV1V1Impl repositoryImpl = new OrderRepositoryV1V1Impl();
+        OrderRepositoryV1Impl repositoryImpl = new OrderRepositoryV1Impl();
         return new OrderRepositoryInterfaceProxy(repositoryImpl, logTrace);
     }
 }
